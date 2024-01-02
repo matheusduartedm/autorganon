@@ -1,0 +1,4 @@
+ sep=;
+Bus; Bus Name; Area; Zone; VBase(kV); Volt(pu); VMin(pu); VMax(pu); 
+44669; RSFRANUFV000; 771; 1; 34.5; 1.133; 0.950; 1.050; 
+44670; RSFRAN-PI034; 771; 1; 34.5; 1.129; 0.950; 1.050; 

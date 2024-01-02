@@ -1,0 +1,262 @@
+  'S.J.PI-PI500(5570) SJPIT2-PI000(44084) #2                   ' 
+	BRANCH       5570        44084       02
+			END /
+	  'GENDO2-BA500(6060) OUROLN-BA500(6070) #1                    ' 
+	BRANCH       6060         6070       01
+			END /
+	  'SGT2-1-PI000(8367) SGT2-4-PI000(8438) #2                    ' 
+	BRANCH       8367         8438       02
+			END /
+	  'COLINA-TO500(7300) CO-MI3CAP500(7305) #3                    ' 
+	BRANCH       7300         7305       03
+			END /
+	  'LAJEAD-TO500(7204) LAJ-T1-TO000(44031) #1                   ' 
+	BRANCH       7204        44031       01
+			END /
+	  'BARREI-BA500(6360) CELEO--BA500(44596) #1                   ' 
+	BRANCH       6360        44596       01
+			END /
+	  'BURITI-BA500(6075) GILBU2-PI500(7190) #6                    ' 
+	BRANCH       6075         7190       06
+			END /
+	  'BURITI-BA500(6075) ALTITU-BA500(9478) #1                    ' 
+	BRANCH       6075         9478       01
+			END /
+	  'NEWER1-BA500(44700) BARREI-BA500(6360) #1                   ' 
+	BRANCH      44700         6360       01
+			END /
+	  'B.JESU-PI230(7181) E.MART-PI230(5681) #3                    ' 
+	BRANCH       7181         5681       03
+			END /
+	  'S.J.PI-PI500(5570) B.ESPE-PI500(5510) #1                    ' 
+	BRANCH       5570         5510       01
+			END /
+	  'S.J.PI-PI500(5570) LDVENT-PI500(8198) #2                    ' 
+	BRANCH       5570         8198       02
+			END /
+	  'S.J.PI-PI500(5570) SJPIT3-PI000(45046) #3                   ' 
+	BRANCH       5570        45046       03
+			END /
+	  'GENDO2-BA500(6060) GOR-T1-BA000(42392) #1                   ' 
+	BRANCH       6060        42392       01
+			END /
+	  'GENDO2-BA500(6060) GOR-T3-BA000(45304) #3                   ' 
+	BRANCH       6060        45304       03
+			END /
+	  'MIRACE-TO500(7200) MI-GR1CAP500(7201) #1                    ' 
+	BRANCH       7200         7201       01
+			END /
+	  'S.J.PI-PI500(5570) NOLIND-PI500(6743) #1                    ' 
+	BRANCH       5570         6743       01
+			END /
+	  'S.J.PI-PI500(5570) FV_SJP-PI500(8167) #1                    ' 
+	BRANCH       5570         8167       01
+			END /
+	  'EDNBAR-BA500(44978) BARREI-BA500(6360) #1                   ' 
+	BRANCH      44978         6360       01
+			END /
+	  'LAJEAD-TO500(7204) LAJ-T2-TO000(44033) #2                   ' 
+	BRANCH       7204        44033       02
+			END /
+	  'SPELAD-PA500(6754) SPLAT1-PA000(7261) #1                    ' 
+	BRANCH       6754         7261       01
+			END /
+	  'MR-GR3CAP500(7209) GR-MI3CAP500(7105) #3                    ' 
+	BRANCH       7209         7105       03
+			END /
+	  'GENDO2-BA500(6060) STEUGE-BA500(8377) #2                    ' 
+	BRANCH       6060         8377       02
+			END /
+	  'S.J.PI-PI500(5570) SJPIT1-PI000(42344) #1                   ' 
+	BRANCH       5570        42344       01
+			END /
+	  'GILBUE-PI230(7191) GID-T1-PI000(44035) #1                   ' 
+	BRANCH       7191        44035       01
+			END /
+	  'GENDO2-BA500(6060) SOLSER-BA500(8714) #3                    ' 
+	BRANCH       6060         8714       03
+			END /
+	  'GENDO2-BA500(6060) GOR-T2-BA000(42394) #2                   ' 
+	BRANCH       6060        42394       02
+			END /
+	  'CHATF--PI500(45102) S.J.PI-PI500(5570) #1                   ' 
+	BRANCH      45102         5570       01
+			END /
+	  'MIRACE-TO500(7200) MI-GR2CAP500(7203) #2                    ' 
+	BRANCH       7200         7203       02
+			END /
+	  'S.J.PI-PI500(5570) SJ-SB2CAP500(5577) #2                    ' 
+	BRANCH       5570         5577       02
+			END /
+	  'SPELAD-PA500(6754) SPLAT2-PA000(7263) #2                    ' 
+	BRANCH       6754         7263       02
+			END /
+	  'GENDO2-BA500(6060) BURITI-BA500(6075) #7                    ' 
+	BRANCH       6060         6075       07
+			END /
+	  'MIRACE-TO500(7200) LAJEAD-TO500(7204) #2                    ' 
+	BRANCH       7200         7204       02
+			END /
+	  'QUEIMA-PI500(5325) LVENT3-PI500(5699) #5                    ' 
+	BRANCH       5325         5699       05
+			END /
+	  'SPELAD-PA500(6754) MIRACE-TO500(7200) #1                    ' 
+	BRANCH       6754         7200       01
+			END /
+	  'SPELAD-PA500(6754) INTEGR-PA500(6560) #1                    ' 
+	BRANCH       6754         6560       01
+			END /
+	  'GILBU2-PI500(7190) LINS---PI500(45989) #5                   ' 
+	BRANCH       7190        45989       05
+			END /
+	  'GILBUE-PI230(7191) GID-T2-PI000(44037) #2                   ' 
+	BRANCH       7191        44037       02
+			END /
+	  'BARREI-BA500(6360) SERSOL-BA500(44601) #1                   ' 
+	BRANCH       6360        44601       01
+			END /
+	  'MIRACE-TO500(7200) CO-MI1CAP500(7301) #1                    ' 
+	BRANCH       7200         7301       01
+			END /
+	  'S.J.PI-PI500(5570) SJ.PI2-PI500(45019) #1                   ' 
+	BRANCH       5570        45019       01
+			END /
+	  'ALTITU-BA500(9478) ALTITU-BA230(9479) #1                    ' 
+	BRANCH       9478         9479       01
+			END /
+	  'BARREI-BA500(6360) BRD-T2-BA000(44138) #2                   ' 
+	BRANCH       6360        44138       02
+			END /
+	  'S.GONC-PI500(8188) SGT3-1-PI000(8952) #3                    ' 
+	BRANCH       8188         8952       03
+			END /
+	  'GENDO2-BA500(6060) BJLAP2-BA500(6349) #2                    ' 
+	BRANCH       6060         6349       02
+			END /
+	  'MIRACE-TO500(7200) GILBU2-PI500(7190) #3                    ' 
+	BRANCH       7200         7190       03
+			END /
+	  'GILBU2-PI500(7190) GILBUE-PI230(7191) #1                    ' 
+	BRANCH       7190         7191       01
+			END /
+	  'BARREI-BA500(6360) BURITI-BA500(6075) #6                    ' 
+	BRANCH       6360         6075       06
+			END /
+	  'CO-MI3CAP500(7305) MIRACE-TO500(7200) #3                    ' 
+	BRANCH       7305         7200       03
+			END /
+	  'BARREI-BA500(6360) BRREC2CAP500(6443) #2                    ' 
+	BRANCH       6360         6443       02
+			END /
+	  'BURITI-BA500(6075) QUEIMA-PI500(5325) #2                    ' 
+	BRANCH       6075         5325       02
+			END /
+	  'SGT3-1-PI000(8952) SGT3-2-PI000(8953) #3                    ' 
+	BRANCH       8952         8953       03
+			END /
+	  'MIRACE-TO500(7200) CO-MI2CAP500(7303) #2                    ' 
+	BRANCH       7200         7303       02
+			END /
+	  'MIRACE-TO500(7200) MIRACE-TO000(7208) #1                    ' 
+	BRANCH       7200         7208       01
+			END /
+	  'SGT3-1-PI000(8952) SGT3-4-PI000(8955) #3                    ' 
+	BRANCH       8952         8955       03
+			END /
+	  'SGT1-1-PI000(8366) SGT1-2-PI000(8432) #1                    ' 
+	BRANCH       8366         8432       01
+			END /
+	  'MIRACE-TO500(7200) MR-GR3CAP500(7209) #3                    ' 
+	BRANCH       7200         7209       03
+			END /
+	  'CFORM2-BA500(44945) BARRA2-BA500(44946) #1                  ' 
+	BRANCH      44945        44946       01
+			END /
+	  'BARREI-BA500(6360) BR-GB-CAP500(6446) #2                    ' 
+	BRANCH       6360         6446       02
+			END /
+	  'B.JESU-PI230(7181) BJE-T1-PI000(44027) #1                   ' 
+	BRANCH       7181        44027       01
+			END /
+	  'MIRACE-TO500(7200) MIRAC2-TO000(7210) #2                    ' 
+	BRANCH       7200         7210       02
+			END /
+	  'CURRAL-PI500(6640) QUEIMA-PI500(5325) #1                    ' 
+	BRANCH       6640         5325       01
+			END /
+	  'S.J.PI-PI500(5570) CURRAL-PI500(6640) #1                    ' 
+	BRANCH       5570         6640       01
+			END /
+	  'S.J.PI-PI500(5570) SJ-SB1-PI500(43952) #5                   ' 
+	BRANCH       5570        43952       05
+			END /
+	  'BARRA2-BA500(44946) CORREN-BA500(44947) #1                  ' 
+	BRANCH      44946        44947       01
+			END /
+	  'LINS---PI500(45989) S.J.PI-PI500(5570) #5                   ' 
+	BRANCH      45989         5570       05
+			END /
+	  'XINGU--PA500(8100) SPELAD-PA500(6754) #1                    ' 
+	BRANCH       8100         6754       01
+			END /
+	  'GR-MI1CAP500(7102) MI-GR1CAP500(7201) #1                    ' 
+	BRANCH       7102         7201       01
+			END /
+	  'SGT1-1-PI000(8366) SGT1-4-PI000(8434) #1                    ' 
+	BRANCH       8366         8434       01
+			END /
+	  'MLG2---CE500(5380) QUEIMA-PI500(5325) #3                    ' 
+	BRANCH       5380         5325       03
+			END /
+	  'COLINA-TO500(7300) CO-MI1CAP500(7301) #1                    ' 
+	BRANCH       7300         7301       01
+			END /
+	  'GILBU2-PI500(7190) S.GONC-PI500(8188) #4                    ' 
+	BRANCH       7190         8188       04
+			END /
+	  'BARREI-BA500(6360) BRREC5CAP500(6080) #5                    ' 
+	BRANCH       6360         6080       05
+			END /
+	  'BURITI-BA500(6075) BARRA2-BA500(44946) #1                   ' 
+	BRANCH       6075        44946       01
+			END /
+	  'S.GONC-PI500(8188) SGT1-1-PI000(8366) #1                    ' 
+	BRANCH       8188         8366       01
+			END /
+	  'B.JESU-PI230(7181) BJE-T2-PI000(44029) #2                   ' 
+	BRANCH       7181        44029       02
+			END /
+	  'SPELAD-PA500(6754) ITACAI-PA500(6440) #1                    ' 
+	BRANCH       6754         6440       01
+			END /
+	  'GILBU2-PI500(7190) GB-BR-CAP500(7197) #2                    ' 
+	BRANCH       7190         7197       02
+			END /
+	  'GILBUE-PI230(7191) B.JESU-PI230(7181) #1                    ' 
+	BRANCH       7191         7181       01
+			END /
+	  'S.GONC-PI500(8188) SGT2-1-PI000(8367) #2                    ' 
+	BRANCH       8188         8367       02
+			END /
+	  'QUEIMA-PI500(5325) OITIS--PI500(8338) #4                    ' 
+	BRANCH       5325         8338       04
+			END /
+	  'SGT2-1-PI000(8367) SGT2-2-PI000(8436) #2                    ' 
+	BRANCH       8367         8436       02
+			END /
+	  'GR-MI2CAP500(7104) MI-GR2CAP500(7203) #2                    ' 
+	BRANCH       7104         7203       02
+			END /
+	  'COLINA-TO500(7300) CO-MI2CAP500(7303) #2                    ' 
+	BRANCH       7300         7303       02
+			END /
+	  'CLINS--PI500(45990) LINS---PI500(45989) #1                  ' 
+	BRANCH      45990        45989       01
+			END /
+	  'BARREI-BA500(6360) BRD-T1-BA000(42386) #1                   ' 
+	BRANCH       6360        42386       01
+			END /
+	  'GB-BR-CAP500(7197) BR-GB-CAP500(6446) #2                    ' 
+	BRANCH       7197         6446       02
+			END /
+	
