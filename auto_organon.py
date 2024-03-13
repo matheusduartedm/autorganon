@@ -126,7 +126,6 @@ def gen_ctg(CASE_PATH, line_file_name, trf_file_name, input_bus, input_levels):
 
 
 def gen_spt(CASE_PATH, cases_file_name = "cases.csv", RUN_CONTINGENCY = True):
-	#SCRIPT INPUTS
 	CASES_FILE = CASE_PATH + "\\" + cases_file_name
 	OUTPUT_SCRIPT = CASE_PATH + "\\" + "script.spt"
 	DEF_FILE = CASE_PATH + "\\" + "definitions.def"
@@ -134,7 +133,6 @@ def gen_spt(CASE_PATH, cases_file_name = "cases.csv", RUN_CONTINGENCY = True):
 	OUTPUT_PATH = CASE_PATH + "\\" + "auto-organon_output/"
 
 
-	# SCRIPT
 	input_file_paths = []
 	with open(CASES_FILE, "r") as case_file:
 		for row in csv.reader(case_file):

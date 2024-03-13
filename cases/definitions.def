@@ -1,6 +1,7 @@
  MONITOR
- AREA        773     230.0  999.0 ONE  /
- AREA        772     230.0  999.0 ONE  /
- AREA        771     230.0  999.0 ONE  /
- AREA        761     230.0  999.0 ONE  /
+ AREA         24     230.0  999.0 ONE  /
+ AREA         25     230.0  999.0 ONE  /
+ AREA         27     230.0  999.0 ONE  /
+ AREA         33     230.0  999.0 ONE  /
+ AREA         63     230.0  999.0 ONE  /
  END /

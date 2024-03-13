@@ -1,0 +1,9 @@
+{
+    "case_path": "D:\\dev\\auto_organon\\cases",
+    "line_file": "2028Lines.csv",
+    "trf_file": "2028Transfo.csv",
+    "bus": "7190",
+    "levels": "3",
+    "areas": "773, 772, 771, 761",
+    "cases_file": "cases.csv"
+}
