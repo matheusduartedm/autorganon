@@ -1,12 +1,10 @@
 import os
 import math
 
-bus = 1492
-Pl = 1000.0
-PF = 0.95
-Ql = Pl * math.tan(math.acos(PF))
-
-folder_path = r"D:\dev\auto_organon\cases\auto-organon_output\sensitivity"
+bus = 149
+Pl = 300.0
+PF = 0.98
+folder_path = r"D:\studies\organon\vale\vitoria\sensib_300"
 
 def format_number(number):
     if number >= 10000:
@@ -26,7 +24,7 @@ for subdir, dirs, files in os.walk(folder_path):
     for file_name in files:
         if file_name.endswith('.PWF'):
             file_path = os.path.join(subdir, file_name)
-            
+
             with open(file_path, 'r', encoding='latin-1') as file:
                 content = file.readlines()
 
@@ -34,7 +32,7 @@ for subdir, dirs, files in os.walk(folder_path):
             for i, line in enumerate(content):
                 if line.strip() == 'DBAR':
                     section_started = True
-                    continue    
+                    continue
                 if line.strip()[0] == '(':
                     continue
                 if section_started:

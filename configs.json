@@ -1,7 +1,7 @@
 {
-    "case_path": "D:\\dev\\auto_organon\\cases",
-    "line_file": "2028Lines.csv",
-    "trf_file": "2028Transfo.csv",
+    "case_path": "D:\\studies\\organon\\vale\\rio\\base",
+    "line_file": "ntw05.csv",
+    "trf_file": "ntw06.csv",
     "bus": "7190",
     "levels": "3",
     "areas": "773, 772, 771, 761",

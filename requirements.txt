@@ -1,2 +1,4 @@
 pyinstaller
 flet
+pandas
+openpyxl

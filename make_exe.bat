@@ -1,11 +1,13 @@
 @ECHO OFF
 
-
 call venv\Scripts\activate.bat
 
 @ECHO Building distribution...
 @ECHO.
-@SET PYTHONOPTIMIZE=1 && pyinstaller auto_organon.spec --noconfirm
+@ECHO PYTHON PATH: %~dp0venv\Scripts\python.exe
+@ECHO PYINSTALLER PATH: %~dp0venv\Scripts\pyinstaller.exe
+
+@SET PYTHONOPTIMIZE=1 && pyinstaller autorganon.spec --noconfirm
 @IF %ERRORLEVEL% NEQ 0 (
   @ECHO *** Error *** generating binaries.
   GOTO :error
@@ -17,4 +19,3 @@ call venv\Scripts\activate.bat
 
 :error
 call venv\Scripts\deactivate.bat
-
