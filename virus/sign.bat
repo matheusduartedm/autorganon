@@ -1,6 +1,0 @@
-@ECHO OFF
-
-SET SIGN_HOME=%~dp0
-SET SIGN_SCRIPT=%SIGN_HOME%\sign.py
-
-python %SIGN_SCRIPT% %*
