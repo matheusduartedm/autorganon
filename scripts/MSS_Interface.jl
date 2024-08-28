@@ -1,0 +1,10 @@
+
+win = GtkWindow("EMC",400,200)
+run   = GtkButton("Executar")
+convergencia = GtkButton("Convergência")
+estabilidade = GtkButton("Índice")
+grafico = GtkButton("Graficar")
+hbox = GtkBox(:v)
+push!(win,hbox)
+push!(hbox,run,convergencia,estabilidade,grafico)
+showall(win)
