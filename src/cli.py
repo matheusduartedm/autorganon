@@ -1,11 +1,9 @@
 import argparse
-import json
-import sys
+
 from autorganon import *
-from gui import *
 
 
-if __name__ == "__main__":
+def cli():
     parser = argparse.ArgumentParser(description="Autorganon Command Line Interface")
 
     subparsers = parser.add_subparsers(dest='command', help='commands')
@@ -68,5 +66,6 @@ if __name__ == "__main__":
             elif args.command == 'spt':
                 run_gen_spt(config)
 
-    else:
-        ft.app(target=lambda page: AutoOrganonGUI(page))
+
+if __name__ == '__main__':
+    cli()
