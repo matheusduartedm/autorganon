@@ -1,4 +1,5 @@
 import flet as ft
+
 from autorganon import *
 
 class AutoOrganonGUI:
@@ -70,3 +71,11 @@ class AutoOrganonGUI:
         save_values(updated_values)
         gen_spt(self.case_path.value, self.cases_file_input.value)
         self.page.add(ft.Text(".spt generated successfully!"))
+
+
+def gui():
+    ft.app(target=lambda page: AutoOrganonGUI(page))
+
+
+if __name__ == "__main__":
+    gui()
