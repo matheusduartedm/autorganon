@@ -20,11 +20,20 @@ def cli():
     run_parser = subparsers.add_parser('run', help='Executes the Organon process with the specified .spt script file.')
     run_parser.add_argument('input', help='Input file')
 
-    add_parser = subparsers.add_parser('add', help='Add a load to the specified bus')
-    add_parser.add_argument('--load', help='Load value', type=float, required=True)
-    add_parser.add_argument('--bus', help='Bus number', type=int, required=True)
-    add_parser.add_argument('--pf', help='Power factor', type=float, required=True)
-    add_parser.add_argument('--path', help='Path to the folder containing the .PWF files', required=True)
+    add_parser = subparsers.add_parser('add', help='Add a load or generation to the specified bus')
+    add_subparsers = add_parser.add_subparsers(dest='add_type', help='Type of addition')
+
+    load_parser = add_subparsers.add_parser('load', help='Add load to bus')
+    load_parser.add_argument('--value', help='Load value', type=float, required=True)
+    load_parser.add_argument('--bus', help='Bus number', type=int, required=True)
+    load_parser.add_argument('--pf', help='Power factor', type=float, required=True)
+    load_parser.add_argument('--path', help='Path to the folder containing the .PWF files', required=True)
+
+    gen_parser = add_subparsers.add_parser('gen', help='Add generation to bus')
+    gen_parser.add_argument('--value', help='Generation value', type=float, required=True)
+    gen_parser.add_argument('--bus', help='Bus number', type=int, required=True)
+    gen_parser.add_argument('--pf', help='Power factor', type=float, required=True)
+    gen_parser.add_argument('--path', help='Path to the folder containing the .PWF files', required=True)
 
     compare_parser = subparsers.add_parser('compare', help='Compare cases')
     compare_parser.add_argument('--base', help='Base path', required=True)
@@ -40,7 +49,10 @@ def cli():
 
     if args.command:
         if args.command == 'add':
-            add_load(args.load, args.bus, args.pf, args.path)
+            if args.add_type == 'load':
+                add_load(args.value, args.bus, args.pf, args.path)
+            elif args.add_type == 'gen':
+                add_generation(args.value, args.bus, args.pf, args.path)
 
         elif args.command == 'run':
             run_organon(args.input)

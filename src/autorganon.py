@@ -322,6 +322,58 @@ def add_load(pl, bus, pf, folder_path):
                 print(f"The file {file_path} has been successfully updated.")
 
 
+
+
+def add_generation(pg, bus, pf, folder_path):
+    """
+    Add generation to a specific bus in PWF files
+    
+    Args:
+        pg (float): Active power generation in MW
+        bus (int): Bus number
+        pf (float): Power factor
+        folder_path (str): Path to folder containing PWF files
+    """
+    qg = pg * math.tan(math.acos(pf))
+    for subdir, dirs, files in os.walk(folder_path):
+        for file_name in files:
+            if file_name.endswith('.PWF'):
+                file_path = os.path.join(subdir, file_name)
+
+                with open(file_path, 'r', encoding='latin-1') as file:
+                    content = file.readlines()
+
+                section_started = False
+                for i, line in enumerate(content):
+                    if line.strip() == 'DBAR':
+                        section_started = True
+                        continue
+                    if line.strip()[0] == '(':
+                        continue
+                    if section_started:
+                        if line.strip() == '99999':
+                            break
+                        line_parts = line.split()
+                        if int(line_parts[0]) == bus:
+                            # Generation values are in columns 32-37 (Pg) and 37-42 (Qg)
+                            existing_Pg = float(line[32:37].strip()) if line[32:37].strip() else 0.0
+                            existing_Qg = float(line[37:42].strip()) if line[37:42].strip() else 0.0
+
+                            updated_Pg = existing_Pg + pg
+                            updated_Qg = existing_Qg + qg
+
+                            new_line = (line[:32] + 
+                                      f"{format_number(updated_Pg):>5}" + 
+                                      f"{format_number(updated_Qg):>5}" + 
+                                      line[42:])
+                            content[i] = new_line
+
+                with open(file_path, 'w', encoding='latin-1') as file:
+                    file.writelines(content)
+
+                print(f"The file {file_path} has been successfully updated.")
+
+
 def compare_cases(base_path, sensitivity_path):
     BASE_PATH = os.path.join(base_path, "output")
     SENSITIVITY_PATH = os.path.join(sensitivity_path, "output")
