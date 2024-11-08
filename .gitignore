@@ -1,5 +1,6 @@
-build
-dist
+build/autorganon
+build/build
+build/dist
 venv
 cases
 __pycache__
